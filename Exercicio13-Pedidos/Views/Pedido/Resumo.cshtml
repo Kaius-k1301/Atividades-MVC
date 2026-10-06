@@ -1,0 +1,4 @@
+@{ ViewData["Title"] = "Resumo dos pedidos"; var porStatus = ViewBag.PorStatus as Dictionary<string, int>; }
+<h1>Resumo dos pedidos</h1>
+<div class="row g-3 mb-4"><div class="col-md-6"><div class="card"><div class="card-body"><h2 class="h5">Total de pedidos</h2><p class="fs-3">@ViewBag.TotalPedidos</p></div></div></div><div class="col-md-6"><div class="card"><div class="card-body"><h2 class="h5">Valor total</h2><p class="fs-3">@ViewBag.ValorTotal.ToString("C")</p></div></div></div></div>
+<h2>Quantidade por status</h2><table class="table table-bordered"><thead><tr><th>Status</th><th>Quantidade</th></tr></thead><tbody>@foreach (var item in porStatus!) { <tr><td>@item.Key</td><td>@item.Value</td></tr> }</tbody></table>

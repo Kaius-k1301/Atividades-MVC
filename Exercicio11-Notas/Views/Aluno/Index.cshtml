@@ -1,0 +1,20 @@
+@model IEnumerable<AtividadesMVC.Kaius.Exercicio11.Models.Aluno>
+@{ ViewData["Title"] = "Desempenho dos alunos"; }
+<h1>Desempenho dos alunos</h1>
+<p></p>
+<div class="table-responsive">
+<table class="table table-striped table-bordered align-middle">
+    <thead><tr><th>Aluno</th><th>Curso</th><th>Média</th><th>Situação</th></tr></thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+                <td>@item.Nome</td>
+                <td>@item.Curso</td>
+                <td>@item.Media.ToString("F1")</td>
+                <td>@item.Situacao</td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>

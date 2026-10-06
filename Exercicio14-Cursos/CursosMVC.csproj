@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>AtividadesMVC.Kaius.Exercicio14</RootNamespace>
+    <AssemblyName>Kaius.Exercicio14.Cursos</AssemblyName>
+  </PropertyGroup>
+</Project>

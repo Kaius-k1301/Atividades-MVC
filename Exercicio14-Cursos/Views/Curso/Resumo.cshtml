@@ -1,0 +1,5 @@
+@{ ViewData["Title"] = "Resumo dos cursos"; }
+<h1>Resumo dos cursos</h1><div class="row g-3">
+@foreach (var item in new[] { ("Total de cursos", ViewBag.Total), ("Cursos disponíveis", ViewBag.Disponiveis), ("Cursos lotados", ViewBag.Lotados), ("Cursos online", ViewBag.Online), ("Cursos presenciais", ViewBag.Presenciais) })
+{ <div class="col-md-4"><div class="card"><div class="card-body"><h2 class="h5">@item.Item1</h2><p class="fs-3">@item.Item2</p></div></div></div> }
+</div>

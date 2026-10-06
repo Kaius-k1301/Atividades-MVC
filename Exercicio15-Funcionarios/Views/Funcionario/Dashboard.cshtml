@@ -1,0 +1,8 @@
+@{ ViewData["Title"] = "Dashboard"; var departamentos = ViewBag.PorDepartamento as Dictionary<string, int>; }
+<h1>Dashboard - Norte Forte Tecnologia</h1>
+<div class="row g-3 mb-4">
+@foreach (var item in new[] { ("Total", ViewBag.Total), ("Ativos", ViewBag.Ativos), ("Inativos", ViewBag.Inativos) })
+{ <div class="col-md-4"><div class="card"><div class="card-body"><h2 class="h5">@item.Item1</h2><p class="fs-3">@item.Item2</p></div></div></div> }
+</div>
+<h2>Quantidade por departamento</h2><table class="table table-bordered"><thead><tr><th>Departamento</th><th>Quantidade</th></tr></thead><tbody>@foreach (var item in departamentos!) { <tr><td>@item.Key</td><td>@item.Value</td></tr> }</tbody></table>
+<h2>Salários</h2><ul><li>Média salarial: @ViewBag.Media.ToString("C")</li><li>Maior salário: @ViewBag.Maior.ToString("C")</li><li>Menor salário: @ViewBag.Menor.ToString("C")</li></ul>
