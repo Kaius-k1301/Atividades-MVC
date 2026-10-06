@@ -1,8 +1,0 @@
-:root { --cor-principal: #fd7e14; --cor-suave: #fff0e2; }
-body { background: #fafafa; color: #263238; }
-.navbar { background: var(--cor-principal); }
-h1 { color: var(--cor-principal); margin-bottom: 1rem; }
-h2 { margin-top: 1.5rem; font-size: 1.3rem; }
-.card { border-top: 4px solid var(--cor-principal); }
-.table thead { background: var(--cor-suave); }
-footer { color: #666; background: white; }
