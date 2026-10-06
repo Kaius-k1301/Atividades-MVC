@@ -23,14 +23,14 @@ Aluno: Kaius
 ## Como abrir e executar
 
 1. Abra no Visual Studio a pasta do exercício desejado.
-2. Abra o arquivo `.csproj` daquele exercício.
+2. Abra o arquivo .csproj daquele exercício.
 3. Aguarde a restauração automática do projeto.
 4. Execute com o botão de iniciar do Visual Studio.
 
 Também é possível abrir um terminal dentro da pasta de um exercício e executar:
 
-```text
+
 dotnet run
-```
+
 
 Cada pasta é um projeto ASP.NET Core MVC independente. Os dados são mantidos em memória e nenhum banco de dados é necessário.
